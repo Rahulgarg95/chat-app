@@ -1,5 +1,17 @@
-{% extends layout.html %}
+{% extends 'layout.html' %}
 
 {% block title %}
 SignIn
+{% endblock %}
+
+{% block content %}
+
+<h2 id="#app-heading"> Chat App </h2>
+
+<form action="/login" method="POST">
+    <h4 id="#username-name"> User Name </h4>
+    <input type="text" id="#channel-input" name="user-name" placeholder="User Name">
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
 {% endblock %}

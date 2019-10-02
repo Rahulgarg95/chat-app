@@ -6,33 +6,12 @@ Homepage
 
 {% block content %}
 
-<h2 id="#app-heading"> Chat App </h2>
+<h2 id="#app-heading"> Chat-App </h2>
 
-<form action="/" method="POST">
-    <h4 id="#channel-name"> User Name </h4>
-    <input type="text" id="#channel-input" name="user-name" placeholder="User Name">
-    <button type="submit" class="btn btn-primary">Submit</button>
+<form action="/create" method="POST">
+    <h4 id="#channel-name"> Please Enter a channel name existing or join a new one :) </h4>
+    <input type="text" id="#channel-input" name="channel-name" placeholder="Channel Name">
+    <input type="button" class="btn btn-primary">
 </form>
-
-
-{% if username %}
-<div class="row">
-    <div class="col-sm-3">
-        {% for channel in channels %}
-            {{ channel }}
-        {% endfor %}
-    </div>
-    <div class="col-sm-9">
-        <div class="channel">
-            <h4 id="#channel-name"> {{ username }} </h4>
-        </div>
-        <div class="channel">
-            <h4 id="#channel-name"> Channel Name: </h4>
-            <input type="text" id="#channel-input" name="channel-name" placeholder="Channel Name">
-            <input type="button" class="btn btn-primary">
-        </div>
-    </div>
-</div>
-{% endif %}
 
 {% endblock %}
