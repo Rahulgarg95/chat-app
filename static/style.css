@@ -1,0 +1,27 @@
+#page-layout{
+    margin: 20px;
+    letter-spacing: 1px;
+}
+
+#channel-form{
+    padding: 20px;
+}
+
+#msg-list {
+    height: 70vh;
+    overflow: auto;
+}
+
+#channel-list{
+    height: 30vh;
+    overflow: auto;
+}
+
+#users-list{
+    height: 30vh;
+    overflow: auto;
+}
+
+.card-header h6{
+    text-align: center;
+}
